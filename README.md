@@ -1,1 +1,1 @@
-# openshift-tool-visualstudio
+# RedHat OpenShift Tool for Visual Studio with Docker Tooling
