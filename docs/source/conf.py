@@ -52,8 +52,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'OpenShift Tool for Visual Studio'
-copyright = '2016, Shrutika Patil'
-author = 'Shrutika Patil'
+copyright = '2016, Click2Cloud Inc'
+author = 'Click2Cloud Inc'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

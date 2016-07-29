@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; OpenShift Tool for Visual Studio 1.0.0 documentation</title>
+  <title>Installing OpenShift 3 CLI &mdash; OpenShift Tool for Visual Studio 1.0.0 documentation</title>
   
 
   
@@ -30,7 +30,8 @@
   
 
   
-    <link rel="top" title="OpenShift Tool for Visual Studio 1.0.0 documentation" href="index.html"/> 
+    <link rel="top" title="OpenShift Tool for Visual Studio 1.0.0 documentation" href="index.html"/>
+        <link rel="prev" title="Pre-Requisites Software" href="pre-requisites.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -65,7 +66,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -79,11 +80,11 @@
           
             
             
-                <ul>
+                <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="notice.html">Notice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pre-requisites.html">Pre-Requisites Software</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installing-openshift-3-cli.html">Installing OpenShift 3 CLI</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing OpenShift 3 CLI</a></li>
 </ul>
 
             
@@ -106,7 +107,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -114,8 +115,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Installing OpenShift 3 CLI</li>
       <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/installing-openshift-3-cli.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
@@ -124,23 +129,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="installing-openshift-3-cli">
+<h1>Installing OpenShift 3 CLI<a class="headerlink" href="#installing-openshift-3-cli" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li>Download latest version of <strong>OpenShift 3 CLI</strong> <strong>for Windows</strong> from
+<a class="reference external" href="https://github.com/openshift/origin/releases">https://github.com/openshift/origin/releases</a>.</li>
+<li>Unzip the archive and move the OC client tool to your desired
+location.</li>
+<li>Now set the System Environment Variable <strong>PATH</strong> with location of OC
+client tool location.</li>
+<li>Refer
+<a class="reference external" href="https://msdn.microsoft.com/en-us/library/office/ee537574(v=office.14).aspx">this</a>
+link to set environment variables on Windows.</li>
+<li>Now verify OpenShift 3 CLI installation is configured correctly. To
+do so, open <strong>Command Prompt</strong> and run:</li>
+</ol>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="n">oc</span> <span class="n">version</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="6">
+<li>If OC client tool is configured correctly, you will get version of OC
+binary as shown in below image</li>
+</ol>
+<div class="figure align-left">
+<img alt="_images/image0.png" src="_images/image0.png" />
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="pre-requisites.html" class="btn btn-neutral" title="Pre-Requisites Software" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -178,7 +204,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -194,14 +219,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>
