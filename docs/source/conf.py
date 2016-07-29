@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# openshifttool documentation build configuration file, created by
-# sphinx-quickstart on Fri Jul 29 11:32:43 2016.
+# OpenShift Tool for Visual Studio documentation build configuration file, created by
+# sphinx-quickstart on Fri Jul 29 11:52:26 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -35,7 +35,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['ntemplates']
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -51,7 +51,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'openshifttool'
+project = 'OpenShift Tool for Visual Studio'
 copyright = '2016, Shrutika Patil'
 author = 'Shrutika Patil'
 
@@ -122,7 +122,8 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+import sphinx_rtd_theme
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -131,12 +132,12 @@ html_theme = 'alabaster'
 # html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-# html_theme_path = []
+# html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = 'openshifttool v1.0.0'
+# html_title = 'OpenShift Tool for Visual Studio v1.0.0'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -156,7 +157,7 @@ html_theme = 'alabaster'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['nstatic']
+html_static_path = ['_static']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -236,7 +237,7 @@ html_static_path = ['nstatic']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'openshifttooldoc'
+htmlhelp_basename = 'OpenShiftToolforVisualStudiodoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -262,7 +263,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'openshifttool.tex', 'openshifttool Documentation',
+    (master_doc, 'OpenShiftToolforVisualStudio.tex', 'OpenShift Tool for Visual Studio Documentation',
      'Shrutika Patil', 'manual'),
 ]
 
@@ -304,7 +305,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'openshifttool', 'openshifttool Documentation',
+    (master_doc, 'openshifttoolforvisualstudio', 'OpenShift Tool for Visual Studio Documentation',
      [author], 1)
 ]
 
@@ -319,8 +320,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'openshifttool', 'openshifttool Documentation',
-     author, 'openshifttool', 'One line description of project.',
+    (master_doc, 'OpenShiftToolforVisualStudio', 'OpenShift Tool for Visual Studio Documentation',
+     author, 'OpenShiftToolforVisualStudio', 'One line description of project.',
      'Miscellaneous'),
 ]
 
@@ -339,3 +340,88 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #
 # texinfo_no_detailmenu = False
+
+
+# -- Options for Epub output ----------------------------------------------
+
+# Bibliographic Dublin Core info.
+epub_title = project
+epub_author = author
+epub_publisher = author
+epub_copyright = copyright
+
+# The basename for the epub file. It defaults to the project name.
+# epub_basename = project
+
+# The HTML theme for the epub output. Since the default themes are not
+# optimized for small screen space, using the same theme for HTML and epub
+# output is usually not wise. This defaults to 'epub', a theme designed to save
+# visual space.
+#
+# epub_theme = 'epub'
+
+# The language of the text. It defaults to the language option
+# or 'en' if the language is not set.
+#
+# epub_language = ''
+
+# The scheme of the identifier. Typical schemes are ISBN or URL.
+# epub_scheme = ''
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+#
+# epub_identifier = ''
+
+# A unique identification for the text.
+#
+# epub_uid = ''
+
+# A tuple containing the cover image and cover page html template filenames.
+#
+# epub_cover = ()
+
+# A sequence of (type, uri, title) tuples for the guide element of content.opf.
+#
+# epub_guide = ()
+
+# HTML files that should be inserted before the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+#
+# epub_pre_files = []
+
+# HTML files that should be inserted after the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+#
+# epub_post_files = []
+
+# A list of files that should not be packed into the epub file.
+epub_exclude_files = ['search.html']
+
+# The depth of the table of contents in toc.ncx.
+#
+# epub_tocdepth = 3
+
+# Allow duplicate toc entries.
+#
+# epub_tocdup = True
+
+# Choose between 'default' and 'includehidden'.
+#
+# epub_tocscope = 'default'
+
+# Fix unsupported image types using the Pillow.
+#
+# epub_fix_images = False
+
+# Scale large images.
+#
+# epub_max_image_width = 0
+
+# How to display URL addresses: 'footnote', 'no', or 'inline'.
+#
+# epub_show_urls = 'inline'
+
+# If false, no index is generated.
+#
+# epub_use_index = True
