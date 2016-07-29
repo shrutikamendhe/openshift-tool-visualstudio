@@ -91,9 +91,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/OpenShiftTool.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/openshifttool.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/OpenShiftTool.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/openshifttool.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -110,8 +110,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/OpenShiftTool"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/OpenShiftTool"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/openshifttool"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/openshifttool"
 	@echo "# devhelp"
 
 .PHONY: epub

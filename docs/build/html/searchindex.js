@@ -1,0 +1,1 @@
+Search.setIndex({envversion:50,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{content:0,index:0,licens:0,maxdepth:0,modul:0,page:0,search:0,toctre:0},titles:["Welcome to OpenShift Tool&#8217;s documentation!"],titleterms:{document:0,indice:0,openshift:0,openshifttool:[],tabl:0,tool:0,welcom:0}})

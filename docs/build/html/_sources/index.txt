@@ -7,10 +7,13 @@ Welcome to OpenShift Tool's documentation!
 =========================================
 
 Contents:
-
+$
 .. toctree::
    :maxdepth: 2
-
+$
+  license$
+$
+$
 
 Indices and tables
 ==================
